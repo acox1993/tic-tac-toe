@@ -1,0 +1,36 @@
+body {
+	background-image: url(../images/wood.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.board {
+	margin: 6em auto;
+	height: 30em;
+	width: 50%;
+	background-color: lightgray;
+}
+table {
+	height: 6em;
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	text-align: center;
+	font-size: 5em;
+ 
+}
+.one, .two, .four, .five {
+	border-right: .1em solid black;
+	border-bottom: .1em solid black;
+}
+
+.three, .six {
+	border-bottom: .1em solid black;
+}
+
+.seven, .eight {
+	border-right: .1em solid black;
+}
+p.start {
+	font-size: .5em;
+}
