@@ -1,19 +1,102 @@
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ul li {	
+	display: inline;
+}
+nav {
+	position: static;
+	height: 10%;
+	padding: 1em;
+	margin-top: -6em;
+}
+
+nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+
+nav ul li:first-child {
+	float: left;
+}
+
+nav ul li:last-child {
+	float: right;
+}
+
+
 body {
 	background-image: url(../images/wood.jpeg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
 
+.starterWrapper {
+	text-align: center;
+	font-size: 1.5em;
+	line-height: .1em;
+}
+.starter {
+	width: 2em;
+	border: .1em solid black;
+	background-color: white;
+	cursor: pointer;
+}
+
 .board {
-	margin: 6em auto;
+	margin: 2em auto;
 	height: 30em;
 	width: 50%;
 	background-color: lightgray;
 }
-.results {
-	display: none;
+.tallyWrapper {
+	background-color: #d9a277;
+	border: .1em solid black;
+	border-collapse: collapse;
+	height: 30em;
+	left: 60em;
 	position: absolute;
-	
+	top: 6em;
+	width: 15em;
+}
+.tallyX, .tallyO {
+	display: inline-block;
+	height: 30em;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	width: 48%;
+
+}
+.tallyO {
+	border-left: .33em solid black;
+	left: 48%;
+}
+div.tallyWrapper i {
+	text-decoration: underline;
+	font-size: 2em;
+}
+.results {
+	background-color: pink;
+	border: .5em solid black;
+	display: none;
+	margin-left: 1.5em;
+	margin-top: 3em;
+	position: absolute;
+	text-align: center;
+	width: 15em;
 
 }
 table {
@@ -24,6 +107,10 @@ table {
 	text-align: center;
 	font-size: 5em;
  
+}
+td {
+	height: 2em;
+	width: 33%;
 }
 .one, .two, .four, .five {
 	border-right: .1em solid black;
