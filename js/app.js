@@ -11,7 +11,7 @@ $(document).ready(function(){
 			$('.tallyO p').append('I');
 		};
 		//$('td').children('i').hasClass(value).css('color','red');
-			
+		// $('td').children('i').hasClass(value).addClass('red');
 		
 	};
 
@@ -45,29 +45,53 @@ $(document).ready(function(){
 		$.each(["fa-circle-o", "fa-times"], function(index, value) {
 				//horizontal//
 				if ($('.one').children('i').hasClass(value) &&  $('.two').children('i').hasClass(value) && $('.three').children('i').hasClass(value)) {
+					$('.one').addClass('red');
+					$('.two').addClass('red');
+					$('.three').addClass('red');
 					goWin(value);	
 				}
 				else if ($('.four').children('i').hasClass(value) &&  $('.five').children('i').hasClass(value) && $('.six').children('i').hasClass(value)) {
+					$('.four').addClass('red');
+					$('.five').addClass('red');
+					$('.six').addClass('red');
 					goWin(value);	
 				}
 				else if ($('.seven').children('i').hasClass(value) &&  $('.eight').children('i').hasClass(value) && $('.nine').children('i').hasClass(value)) {
+					$('.seven').addClass('red');
+					$('.eight').addClass('red');
+					$('.nine').addClass('red');
 					goWin(value);	
 				}
 				//vertical//
 				else if ($('.one').children('i').hasClass(value) &&  $('.four').children('i').hasClass(value) && $('.seven').children('i').hasClass(value)) {
+					$('.one').addClass('red');
+					$('.four').addClass('red');
+					$('.seven').addClass('red');
 					goWin(value);	
 				}
 				else if ($('.two').children('i').hasClass(value) &&  $('.five').children('i').hasClass(value) && $('.eight').children('i').hasClass(value)) {
+					$('.two').addClass('red');
+					$('.five').addClass('red');
+					$('.eight').addClass('red');
 					goWin(value);	
 				}
 				else if ($('.three').children('i').hasClass(value) &&  $('.six').children('i').hasClass(value) && $('.nine').children('i').hasClass(value)) {
+					$('.three').addClass('red');
+					$('.six').addClass('red');
+					$('.nine').addClass('red');
 					goWin(value);	
 				}
 				//diagonal//
 				else if ($('.one').children('i').hasClass(value) &&  $('.five').children('i').hasClass(value) && $('.nine').children('i').hasClass(value)) {
+					$('.one').addClass('red');
+					$('.five').addClass('red');
+					$('.nine').addClass('red');
 					goWin(value);	
 				}
 				else if ($('.three').children('i').hasClass(value) &&  $('.five').children('i').hasClass(value) && $('.seven').children('i').hasClass(value)) {
+					$('.three').addClass('red');
+					$('.five').addClass('red');
+					$('.seven').addClass('red');
 					goWin(value);	
 				};
 		});
@@ -78,7 +102,7 @@ $(document).ready(function(){
 		box = 0;
 		$('div.starter').css('visibility', 'visible');
 		$('div.results').hide();
-		$('td').html("");
+		$('td').html("").removeClass('red');
 	}; 
 	$('.new').click(function(){
 		goNew();
@@ -93,4 +117,4 @@ $(document).ready(function(){
 });
 
 
-//highlighted to show which ones made victory
+//after someone wins keep them from clicking 

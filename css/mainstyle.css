@@ -88,6 +88,9 @@ div.tallyWrapper i {
 	width: 15em;
 
 }
+.red {
+	color: red;
+}
 /* board and inside table style*/
 .board {
 	margin: 4em auto;
