@@ -1,20 +1,9 @@
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
+/* new game and restart style*/
 a {
 	text-decoration: none;
 	color: black;
 }
 
-ul li {	
-	display: inline;
-}
 nav {
 	position: static;
 	height: 10%;
@@ -24,6 +13,7 @@ nav {
 
 nav ul li {
 	text-transform: uppercase;
+	display: inline;
 	font-weight: 700;
 	font-size: 1.2em;
 }
@@ -42,7 +32,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
-
+/* who will go first style */
 .starterWrapper {
 	text-align: center;
 	font-size: 1.5em;
@@ -54,13 +44,11 @@ body {
 	background-color: white;
 	cursor: pointer;
 }
-
-.board {
-	margin: 2em auto;
-	height: 30em;
-	width: 50%;
-	background-color: lightgray;
+div.starter{
+	margin: 0 auto;
 }
+
+/* Tally style*/
 .tallyWrapper {
 	background-color: #d9a277;
 	border: .1em solid black;
@@ -88,6 +76,7 @@ div.tallyWrapper i {
 	text-decoration: underline;
 	font-size: 2em;
 }
+/*results popup style*/
 .results {
 	background-color: pink;
 	border: .5em solid black;
@@ -99,6 +88,13 @@ div.tallyWrapper i {
 	width: 15em;
 
 }
+/* board and inside table style*/
+.board {
+	margin: 4em auto;
+	height: 30em;
+	width: 50%;
+	background-color: lightgray;
+}
 table {
 	height: 6em;
 	width: 100%;
@@ -109,7 +105,7 @@ table {
  
 }
 td {
-	height: 2em;
+	height: 1.9em;
 	width: 33%;
 }
 .one, .two, .four, .five {
@@ -124,10 +120,8 @@ td {
 .seven, .eight {
 	border-right: .1em solid black;
 }
+
+/*opening text in board*/
 p.start {
 	font-size: .5em;
-}
-
-div.starter{
-	margin: 0 auto;
 }
