@@ -10,6 +10,12 @@ body {
 	width: 50%;
 	background-color: lightgray;
 }
+.results {
+	display: none;
+	position: absolute;
+	
+
+}
 table {
 	height: 6em;
 	width: 100%;
@@ -33,4 +39,8 @@ table {
 }
 p.start {
 	font-size: .5em;
+}
+
+div.starter{
+	margin: 0 auto;
 }
