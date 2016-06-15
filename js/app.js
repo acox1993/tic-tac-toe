@@ -5,10 +5,10 @@ $(document).ready(function(){
 	function goWin(value) {
 		$('div.results').show().html("<p>The winner is <i class='fa " + value + "'aria-hidden='true'></i></p>")
 		if (value == 'fa-times') {
-			$('.tallyX p').append('I');
+			$('.tallyX p').append("I ");
 		}
 		else {
-			$('.tallyO p').append('I');
+			$('.tallyO p').append("I ");
 		};
 		//$('td').children('i').hasClass(value).css('color','red');
 		// $('td').children('i').hasClass(value).addClass('red');
